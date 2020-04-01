@@ -1,0 +1,102 @@
+.card_price .level{
+  background-color: orange;
+  gap: 5px;
+  margin: 0px 1px;
+  border: 1px solid #333;
+}
+
+.level{
+    position: relative;
+    display: block;
+    border: 1px solid orange;
+    margin-right: 4px;
+    transition: .2s;
+  }
+
+  .level.one::after{
+    content: 'Já fiz um Hello World!';
+    display: flex;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    background-color: orange;
+    padding: 4px 8px;
+    color: white;
+    white-space: nowrap;
+    opacity: 0;
+    transition: .2s;
+    border-radius: 20px;
+  }
+
+  .level.two::after{
+    content: 'Conheço mas preciso de ajuda';
+    display: flex;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    background-color: orange;
+    padding: 4px 8px;
+    color: white;
+    white-space: nowrap;
+    opacity: 0;
+    transition: .2s;
+    border-radius: 20px;
+  }
+
+  .level.three::after{
+    content: 'Auto suficiente';
+    display: flex;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    background-color: orange;
+    padding: 4px 8px;
+    color: white;
+    white-space: nowrap;
+    opacity: 0;
+    transition: .2s;
+    border-radius: 20px;
+  }
+
+  .level.four::after{
+    content: 'Sou Referência';
+    display: flex;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    background-color: orange;
+    padding: 4px 8px;
+    color: white;
+    white-space: nowrap;
+    opacity: 0;
+    transition: .2s;
+    border-radius: 20px;
+  }
+  .level:hover{
+    cursor: pointer;
+    border-color: rgb(139, 197, 51);
+    background-color: rgb(139, 197, 51);
+    border: 1px solid whitesmoke;
+  }
+
+  .level:hover::after{
+    opacity: 1;
+  }
+
+.card_price .level:first-child {
+    border-radius: 20px 0px 0px 20px;
+}
+
+.card_price .level.level:last-child{
+    border-radius: 0px 20px 20px 0px;
+}
+
+
+.card_price .level.not {
+    background: var(--color-rocket);
+    filter: brightness(90%);
+}

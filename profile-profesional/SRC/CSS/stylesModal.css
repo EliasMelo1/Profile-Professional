@@ -1,0 +1,102 @@
+
+:root {
+    --color-green: #1aaf40;
+    --color-rocket: #7159c1;
+}
+/* === MODAL ===*/
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+    display: grid;
+    row-gap: 3vh;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 30vh 15vh 20vh;
+    grid-template-areas: "img description"
+                        "nome nome"
+                        "footer footer";
+    background: var(--color-rocket);
+
+
+}
+
+/*content modal*/
+.modal .img-technology{
+    background: white;
+    grid-area: img;
+    margin: 3vh;
+    height: 100%;
+    width: 60%;
+    position: absolute;
+}
+.modal .img-technology img{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    /* margin: 5vh 5vh;
+    grid-column-start: 1;
+    grid-row-start:1 ; */
+
+}
+
+.modal .description{
+    background: var(--color-rocket);
+    filter: brightness(95%);
+    margin: 4vh 5vh 0 0;
+    width: 95%;
+    grid-area: description;
+
+}
+.modal .title{
+    background-color: var(--color-rocket);
+    grid-area: nome;
+    margin: 4vh 5vh 0 3vh;
+    filter: brightness(90%);
+}
+
+.modal .footer{
+    grid-area: footer;
+    background-color: blueviolet;
+    height:100%;
+}
+
+.modal .modal-close .material-icons{
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+/* === MODAL ATIVO ===*/
+/* .modal-overlay{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+} */
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+.footer .card-price{
+    grid-area: footer;
+}
+/* == MODAL ABERTO ==*/
+
+
+
+
+
+
